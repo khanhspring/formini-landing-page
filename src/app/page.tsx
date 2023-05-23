@@ -31,10 +31,10 @@ export default function Home() {
             </div>
           </div>
           <div className='flex items-center gap-6 text-sm font-semibold'>
-            <Link href="https://app.formini.so/sign-in">
-              Sign6in
+            <Link href="https://app.formini.so/sign-in" className='flex items-center justify-center whitespace-nowrap'>
+              Sign in
             </Link>
-            <Link href="https://app.formini.so/sign-up" className='h-9 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition'>
+            <Link href="https://app.formini.so/sign-up" className='h-9 w-full flex items-center justify-center whitespace-nowrap px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition'>
               Sign up
             </Link>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
             <div className='relative py-8'>
               <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
 
-              <p className='text-center text-lg text-zinc-600 leading-9'>
+              <p className='text-center text-xl text-zinc-600 leading-9'>
                 Formini - online forms builder is simple to use, yet powerful with AI support.
                 <br />
                 Effortlessly collect and merge data into documents with precision, making the process easy and intuitive.
@@ -91,13 +91,13 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full mt-14">
-            <div className="m-auto max-w-7xl flex flex-col items-center w-full py-20">
+        <section className="w-full mt-14" id="pricing">
+            <div className="m-auto max-w-6xl flex flex-col items-center w-full py-20">
                 <div className="max-w-[45rem] flex flex-col items-center gap-3">
                     <h2 className="text-3xl font-bold">
                         Ready to get started?
                     </h2>
-                    <p className="text-lg text-center">
+                    <p className="text-lg text-center text-zinc-600">
                         If you find the packages below are not suitable, please contact us immediately to receive a detailed quote that suits your needs and purposes.
                     </p>
                 </div>
@@ -110,7 +110,7 @@ export default function Home() {
                         </div>
                         <div className='mt-6'>
                             <Link href="https://app.formini.so">
-                                <button className="h-9 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
+                                <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
                                     Get started
                                 </button>
                             </Link>
@@ -162,7 +162,7 @@ export default function Home() {
                         </div>
                         <div className='mt-6'>
                             <Link href="https://app.formini.so">
-                                <button className="h-9 w-full text-center px-4 bg-white text-blue-600 rounded border border-white hover:bg-white hover:text-black transition shadow-sm">
+                                <button className="h-10 w-full text-center px-4 bg-white text-blue-600 rounded border border-white hover:bg-white hover:text-black transition shadow-sm">
                                     Get started
                                 </button>
                             </Link>
@@ -218,7 +218,7 @@ export default function Home() {
                         </div>
                         <div className='mt-6'>
                             <Link href="https://app.formini.so">
-                                <button className="h-9 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
+                                <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
                                     Get started
                                 </button>
                             </Link>

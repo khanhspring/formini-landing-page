@@ -16,12 +16,17 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.border-mark-to-t {
+  -webkit-mask: linear-gradient(to top, #fff 50%,transparent);
+}
+.border-mark-to-b {
+  -webkit-mask: linear-gradient(to bottom, #fff 50%,transparent);
+}
+.border-mark-to-tb {    
+  -webkit-mask: linear-gradient(to top,#fff 93%,transparent),linear-gradient(to bottom,#fff 93%,transparent),linear-gradient(#000,#000);
+  -webkit-mask-composite: destination-in;
+}
+.border-mark-to-lr {
+  -webkit-mask: linear-gradient(to left,#fff 93%,transparent),linear-gradient(to right,#fff 93%,transparent),linear-gradient(#000,#000);
+  -webkit-mask-composite: destination-in;
 }

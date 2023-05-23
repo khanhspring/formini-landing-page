@@ -1,113 +1,95 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <>
+      <header className='sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 bg-white/95 supports-backdrop-blur:bg-white/60'>
+        <nav className='max-w-6xl m-auto flex items-center justify-between py-4'>
+          <div className='flex items-center gap-12'>
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
+              src="/images/logo.svg"
+              alt="Formini Logo"
               width={100}
               height={24}
               priority
             />
-          </a>
-        </div>
-      </div>
+            <div className='flex items-center gap-6 text-sm'>
+              <Link href="/#features">
+                Features
+              </Link>
+              <Link href="/#pricing">
+                Pricing
+              </Link>
+              <Link href="/docs">
+                Docs
+              </Link>
+              <Link href="/roadmap">
+                Road map
+              </Link>
+            </div>
+          </div>
+          <div className='flex items-center gap-6 text-sm font-semibold'>
+            <Link href="https://app.formini.so/sign-in">
+              Sign in
+            </Link>
+            <Link href="https://app.formini.so/sign-up" className='h-9 px-4 flex items-center bg-black text-white rounded border border-black hover:bg-white hover:text-black transition'>
+              Sign up
+            </Link>
+          </div>
+        </nav>
+      </header>
+      <main className="flex flex-col items-center justify-center mt-16">
+        <section className='max-w-6xl w-full m-auto'>
+          <div className='w-[350px] h-24 m-auto relative'>
+            <div className='w-[1px] h-full absolute left-0 top-0 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-t'></div>
+            <div className='w-[1px] h-full absolute right-0 top-0 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-t'></div>
+          </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <div className='relative'>
+            <div className='w-[1px] absolute left-0 -top-24 -bottom-24 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-tb'></div>
+            <div className='w-[1px] absolute right-0 -top-24 -bottom-24 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-tb'></div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div className='relative py-8'>
+              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+              <h1 className='text-6xl font-black text-center z-2'>
+                Multipurpose online forms <br /> and document merges
+              </h1>
+            </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+            <div className='relative py-8'>
+              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+              <p className='text-center text-lg text-zinc-500 leading-9'>
+                Formini - online forms builder is simple to use, yet powerful with AI support.
+                <br />
+                Effortlessly collect and merge data into documents with precision, making the process easy and intuitive.
+              </p>
+            </div>
+
+            <div className='relative'>
+              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
+              <div className='h-[1px] absolute -left-20 -right-20 bottom-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
+
+              <div className='w-[350px] m-auto py-8 flex flex-col items-center gap-3 relative'>
+                <div className='w-[1px] absolute left-0 top-0 -bottom-28 bg-gradient-to-b from-white to-black/20 bg-[size:1px_5px] border-mark-to-b'></div>
+                <div className='w-[1px] absolute right-0 top-0 -bottom-28 bg-gradient-to-b from-white to-black/20 bg-[size:1px_5px] border-mark-to-b'></div>
+
+                <div className='w-full flex items-center justify-center gap-4'>
+                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center bg-black text-white rounded border border-black hover:bg-white hover:text-black transition font-semibold'>
+                    Get Started
+                  </Link>
+                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center text-zinc-600 rounded border border-zinc-300 hover:border-black transition font-semibold'>
+                    Try Demo
+                  </Link>
+                </div>
+                <p className='text-sm'>No credit card required</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   )
 }

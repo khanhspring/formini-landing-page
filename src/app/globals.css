@@ -17,16 +17,110 @@
 }
 
 .border-mark-to-t {
-  -webkit-mask: linear-gradient(to top, #fff 50%,transparent);
+  --line-color: rgba(0, 0, 0, calc(0.15 * 3));
+
+  bottom: 0;
+  background: linear-gradient(180deg, var(--line-color), var(--line-color) 60%, transparent 0, transparent);
+  background-size: 1px 5px;
+  -webkit-mask: linear-gradient(to top, #fff 60%, transparent);
 }
+
 .border-mark-to-b {
-  -webkit-mask: linear-gradient(to bottom, #fff 50%,transparent);
+  --line-color: rgba(0, 0, 0, calc(0.15 * 3));
+
+  top: 0;
+  background: linear-gradient(180deg, var(--line-color), var(--line-color) 60%, transparent 0, transparent);
+  background-size: 1px 5px;
+  -webkit-mask: linear-gradient(to bottom, #fff 60%, transparent);
 }
-.border-mark-to-tb {    
-  -webkit-mask: linear-gradient(to top,#fff 93%,transparent),linear-gradient(to bottom,#fff 93%,transparent),linear-gradient(#000,#000);
+
+.border-mark-to-tb {
+  --line-color: rgba(0, 0, 0, calc(0.15 * 3));
+
+  top: -64px;
+  height: calc(100% + 128px);
+  background: linear-gradient(180deg, var(--line-color), var(--line-color) 60%, transparent 0, transparent);
+  background-size: 1px 5px;
+  -webkit-mask: linear-gradient(to top, #fff 93%, transparent), linear-gradient(to bottom, #fff 93%, transparent), linear-gradient(#000, #000);
   -webkit-mask-composite: destination-in;
 }
+
 .border-mark-to-lr {
-  -webkit-mask: linear-gradient(to left,#fff 93%,transparent),linear-gradient(to right,#fff 93%,transparent),linear-gradient(#000,#000);
+  --line-color: rgba(0, 0, 0, calc(0.15 * 3));
+
+  left: -64px;
+  width: calc(100% + 128px);
+  background: linear-gradient(to right, var(--line-color), var(--line-color) 60%, transparent 0, transparent);
+  background-size: 5px 1px;
+  -webkit-mask: linear-gradient(to left, #fff 93%, transparent), linear-gradient(to right, #fff 93%, transparent), linear-gradient(#000, #000);
   -webkit-mask-composite: destination-in;
+}
+
+.line-animation-to-t {
+  height: 0%;
+  animation: line-animated-to-t 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards;
+  animation-delay: .15s;
+}
+
+.line-animation-to-b {
+  height: 0%;
+  animation: line-animated-to-b 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards;
+  animation-delay: .15s;
+}
+
+.line-animation-to-tb {
+  height: 0%;
+  animation: line-animated-to-tb 1.08s cubic-bezier(0.645,0.045,0.355,1) forwards;
+  animation-delay: .15s;
+}
+
+.line-animation-to-r {
+  width: 0;
+  animation: line-animated-to-r 1.08s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  animation-delay: 0.15s;
+}
+
+@keyframes line-animated-to-t {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      height: 100%;
+      opacity: .3
+  }
+}
+
+@keyframes line-animated-to-b {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      height: calc(100% + 64px);
+      opacity: .3
+  }
+}
+
+@keyframes line-animated-to-tb {
+  0% {
+      opacity: 1
+  }
+
+  to {
+      height: calc(100% + 128px);
+      opacity: .3
+  }
+}
+
+
+@keyframes line-animated-to-r {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    width: calc(100% + 128px);
+    opacity: .3
+  }
 }

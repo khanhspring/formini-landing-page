@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckIcon } from "@heroicons/react/24/solid"
+import { ArrowRightIcon, CheckIcon, WindowIcon } from "@heroicons/react/24/solid"
 
 export default function Home() {
   return (
@@ -41,18 +41,18 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex flex-col items-center justify-center mt-12">
-        <section className='max-w-6xl w-full m-auto'>
-          <div className='w-[350px] h-24 m-auto relative'>
-            <div className='w-[1px] h-full absolute left-0 top-0 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-t'></div>
-            <div className='w-[1px] h-full absolute right-0 top-0 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-t'></div>
+        <section className='max-w-7xl px-16 w-full m-auto'>
+          <div className='w-[350px] h-16 m-auto relative'>
+            <div className='w-[1px] h-full absolute left-0 border-mark-to-t line-animation-to-t'></div>
+            <div className='w-[1px] h-full absolute right-0 border-mark-to-t line-animation-to-t'></div>
           </div>
 
           <div className='relative'>
-            <div className='w-[1px] absolute left-0 -top-24 -bottom-24 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-tb'></div>
-            <div className='w-[1px] absolute right-0 -top-24 -bottom-24 bg-gradient-to-t from-white to-black/20 bg-[size:1px_5px] border-mark-to-tb'></div>
+            <div className='w-[1px] absolute left-0 border-mark-to-tb line-animation-to-tb'></div>
+            <div className='w-[1px] absolute right-0 border-mark-to-tb line-animation-to-tb'></div>
 
             <div className='relative py-8'>
-              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
+              <div className='h-[1px] absolute top-0 border-mark-to-lr line-animation-to-r'></div>
 
               <h1 className='text-6xl font-black text-center z-2'>
                 Multipurpose online forms <br /> and document merges
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
 
             <div className='relative py-8'>
-              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
+              <div className='h-[1px] absolute top-0 border-mark-to-lr line-animation-to-r'></div>
 
               <p className='text-center text-xl text-zinc-600 leading-9'>
                 Formini - online forms builder is simple to use, yet powerful with AI support.
@@ -70,19 +70,19 @@ export default function Home() {
             </div>
 
             <div className='relative'>
-              <div className='h-[1px] absolute -left-20 -right-20 top-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
-              <div className='h-[1px] absolute -left-20 -right-20 bottom-0 bg-gradient-to-r from-white to-black/20 bg-[size:5px_1px] border-mark-to-lr'></div>
+              <div className='h-[1px] absolute top-0 border-mark-to-lr line-animation-to-r'></div>
+              <div className='h-[1px] absolute bottom-0 border-mark-to-lr line-animation-to-r'></div>
 
               <div className='w-[350px] m-auto py-8 flex flex-col items-center gap-3 relative'>
-                <div className='w-[1px] absolute left-0 top-0 -bottom-28 bg-gradient-to-b from-white to-black/20 bg-[size:1px_5px] border-mark-to-b'></div>
-                <div className='w-[1px] absolute right-0 top-0 -bottom-28 bg-gradient-to-b from-white to-black/20 bg-[size:1px_5px] border-mark-to-b'></div>
+                <div className='w-[1px] absolute left-0 top-0 border-mark-to-b line-animation-to-b'></div>
+                <div className='w-[1px] absolute right-0 top-0 border-mark-to-b line-animation-to-b'></div>
 
                 <div className='w-full flex items-center justify-center gap-4'>
-                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center bg-black text-white rounded border border-black hover:bg-white hover:text-black transition font-semibold'>
-                    Get Started
-                  </Link>
-                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center text-zinc-600 rounded border border-zinc-300 hover:border-black transition font-semibold'>
+                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center gap-2 text-zinc-600 rounded border border-zinc-300 hover:border-black transition font-semibold'>
                     Try Demo
+                  </Link>
+                  <Link href="https://app.formini.so/sign-in" className='h-12 px-4 flex items-center gap-2 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition font-semibold'>
+                    Get Started
                   </Link>
                 </div>
                 <p className='text-sm space tracking-wider text-zinc-500'>No credit card required</p>
@@ -92,182 +92,189 @@ export default function Home() {
         </section>
 
         <section className="w-full mt-14" id="pricing">
-            <div className="m-auto max-w-6xl flex flex-col items-center w-full py-20">
-                <div className="max-w-[45rem] flex flex-col items-center gap-3">
-                    <h2 className="text-3xl font-bold">
-                        Ready to get started?
-                    </h2>
-                    <p className="text-lg text-center text-zinc-600">
-                        If you find the packages below are not suitable, please contact us immediately to receive a detailed quote that suits your needs and purposes.
-                    </p>
-                </div>
-                <div className="w-full mt-14 xl:flex grid grid-cols-1 gap-7 justify-center">
-                    <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border border-zinc-900/10 p-8">
-                        <h3 className="text-xl font-bold">Free</h3>
-                        <div className="mt-4">
-                            <span className="font-bold text-3xl"><span className="text-zinc-400">$</span>0</span>
-                            <span className="text-xs">/month</span>
-                        </div>
-                        <div className='mt-6'>
-                            <Link href="https://app.formini.so">
-                                <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
-                                    Get started
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="mt-6 flex flex-col gap-4">
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1 user</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">3 forms</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">20 document merges/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">100 submissions/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">500MB files storage</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">AI form builder with ChatGPT</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Submissions analysis</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited teams</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited joining workspaces</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border-2 bg-blue-600 p-8 text-white shadow-lg">
-                        <h3 className="text-xl font-bold">Plus</h3>
-                        <div className="mt-4">
-                            <span className="font-bold text-3xl"><span className="text-blue-300">$</span>10</span>
-                            <span className="text-xs">/month</span>
-                        </div>
-                        <div className='mt-6'>
-                            <Link href="https://app.formini.so">
-                                <button className="h-10 w-full text-center px-4 bg-white text-blue-600 rounded border border-white hover:bg-white hover:text-black transition shadow-sm">
-                                    Get started
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="mt-6 flex flex-col gap-4">
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">3 users</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">25 forms</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">200 document merges/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1,000 submissions/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">5GB files storage</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">AI form builder with ChatGPT</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Submissions analysis</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited teams</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited joining workspaces</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Custom ending page</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border border-zinc-900/10 p-8">
-                        <h3 className="text-xl font-bold">Business</h3>
-                        <div className="mt-4">
-                            <span className="font-bold text-3xl"><span className="text-zinc-400">$</span>40</span>
-                            <span className="text-xs">/month</span>
-                        </div>
-                        <div className='mt-6'>
-                            <Link href="https://app.formini.so">
-                                <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
-                                    Get started
-                                </button>
-                            </Link>
-                        </div>
-                        <div className="mt-6 flex flex-col gap-4">
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">5 users</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1,000 forms</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1,000 document merges/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">10,000 submissions/mo</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">10GB files storage</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">AI form builder with ChatGPT</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Submissions analysis</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited teams</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Unlimited joining workspaces</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">Custom ending page</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div className="m-auto max-w-6xl flex flex-col items-center w-full py-20">
+            <div className="max-w-[45rem] flex flex-col items-center gap-3">
+              <h2 className="text-3xl font-bold">
+                Ready to get started?
+              </h2>
+              <p className="text-lg text-center text-zinc-600">
+                If you find the packages below are not suitable, please contact us immediately to receive a detailed quote that suits your needs and purposes.
+              </p>
             </div>
+            <div className="w-full mt-14 xl:flex grid grid-cols-1 gap-7 justify-center">
+              <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border border-zinc-900/10 p-8">
+                <h3 className="text-xl font-bold">Free</h3>
+                <div className="mt-4">
+                  <span className="font-bold text-3xl"><span className="text-zinc-400">$</span>0</span>
+                  <span className="text-xs">/month</span>
+                </div>
+                <div className='mt-6'>
+                  <Link href="https://app.formini.so">
+                    <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
+                      Get started
+                    </button>
+                  </Link>
+                </div>
+                <div className="mt-6 flex flex-col gap-4">
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">1 user</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">3 forms</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">20 document merges/mo</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">100 submissions/mo</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">500MB files storage</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">AI form builder with ChatGPT</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Submissions analysis</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Unlimited teams</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Unlimited joining workspaces</span>
+                  </div>
+                </div>
+              </div>
+              <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border-2 bg-blue-600 p-8 text-white shadow-lg relative">
+
+                <div className='w-full flex flex-col relative z-10'>
+                  <h3 className="text-xl font-bold">Plus</h3>
+                  <div className="mt-4">
+                    <span className="font-bold text-3xl"><span className="text-blue-300">$</span>10</span>
+                    <span className="text-xs">/month</span>
+                  </div>
+                  <div className='mt-6'>
+                    <Link href="https://app.formini.so">
+                      <button className="h-10 w-full text-center px-4 bg-white text-blue-600 rounded border border-white hover:bg-white hover:text-black transition shadow-sm">
+                        Get started
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="mt-6 flex flex-col gap-4">
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">3 users</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">25 forms</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">200 document merges/mo</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">1,000 submissions/mo</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">5GB files storage</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">AI form builder with ChatGPT</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">Submissions analysis</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">Unlimited teams</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">Unlimited joining workspaces</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckIcon className="h-45 w-4" />
+                      <span className="text-sm">Custom ending page</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="absolute inset-0 text-white/10 [mask-image:linear-gradient(white,transparent)]">
+                  <svg aria-hidden="true" className="absolute inset-0 h-full w-full"><defs><pattern id=":R6lm:" width="128" height="128" patternUnits="userSpaceOnUse" x="50%" y="50%"><path d="M0 128V.5H128" fill="none" stroke="currentColor"></path></pattern></defs><rect width="100%" height="100%" fill="url(#:R6lm:)"></rect></svg>
+                </div>
+              </div>
+              <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border border-zinc-900/10 p-8">
+                <h3 className="text-xl font-bold">Business</h3>
+                <div className="mt-4">
+                  <span className="font-bold text-3xl"><span className="text-zinc-400">$</span>40</span>
+                  <span className="text-xs">/month</span>
+                </div>
+                <div className='mt-6'>
+                  <Link href="https://app.formini.so">
+                    <button className="h-10 w-full text-center px-4 bg-black text-white rounded border border-black hover:bg-white hover:text-black transition">
+                      Get started
+                    </button>
+                  </Link>
+                </div>
+                <div className="mt-6 flex flex-col gap-4">
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">5 users</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">1,000 forms</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">1,000 document merges/mo</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">10,000 submissions/mo</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">10GB files storage</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">AI form builder with ChatGPT</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Submissions analysis</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Unlimited teams</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Unlimited joining workspaces</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <CheckIcon className="h-45 w-4" />
+                    <span className="text-sm">Custom ending page</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </>

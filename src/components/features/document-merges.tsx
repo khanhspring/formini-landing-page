@@ -56,7 +56,7 @@ const DocumentMerges: FC<Props> = ({ }) => {
                         </div>
                         <div className="flex items-center gap-2">
                             <span className={`flex items-center justify-center w-5 h-5 rounded-full text-white text-xs ${stackedAnimatedClasses[2] === 'stack-middle-to-front' ? 'bg-blue-600 ring-2' : 'bg-zinc-400'}`}>3</span>
-                            <span className="flex-1">Generate the perfect document by merging the submission into the template.</span>
+                            <span className="flex-1">Generate the perfect document by merging the submitted data into the template.</span>
                         </div>
                     </div>
                 </div>

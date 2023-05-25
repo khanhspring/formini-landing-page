@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FC } from "react";
-
+import twitterLogo from '../../public/images/twitter-logo.svg'
+import Link from "next/link";
 type Props = {
 
 }
@@ -16,7 +17,15 @@ const Footer: FC<Props> = ({ }) => {
                     height={24}
                     priority
                 />
-                <span className="text-zinc-500">Copyright © 2023 Formini.so. All rights reserved.</span>
+                <span className="text-zinc-500">
+                    <Link href="https://twitter.com/harrytraneta" target="_blank">
+                        <Image
+                            src={twitterLogo}
+                            alt="Twitter"
+                            width={27}
+                        />
+                    </Link>
+                </span>
             </div>
         </footer>
     )

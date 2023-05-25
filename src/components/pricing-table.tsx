@@ -9,7 +9,7 @@ type Props = {
 const PricingTable: FC<Props> = ({ }) => {
     return (
         <section className="w-full mt-14" id="pricing">
-            <div className="m-auto max-w-6xl flex flex-col items-center w-full py-28">
+            <div className="m-auto max-w-5xl flex flex-col items-center w-full py-28">
                 <div className="max-w-2xl flex flex-col items-center gap-4">
                     <h2 className="text-4xl font-bold">
                         Ready to get started?

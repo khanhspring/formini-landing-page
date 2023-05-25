@@ -7,7 +7,7 @@ type Props = {
 
 const Banner: FC<Props> = ({ }) => {
     return (
-        <section className='max-w-7xl px-16 w-full m-auto'>
+        <section className='max-w-6xl px-16 w-full m-auto'>
             <div className='w-[350px] h-16 m-auto relative'>
                 <div className='w-[1px] h-full absolute left-0 border-mark-to-t line-animation-to-t'></div>
                 <div className='w-[1px] h-full absolute right-0 border-mark-to-t line-animation-to-t'></div>

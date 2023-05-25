@@ -9,7 +9,7 @@ type Props = {
 const Footer: FC<Props> = ({ }) => {
     return (
         <footer className='w-full'>
-            <div className='max-w-6xl m-auto flex items-center justify-between py-7'>
+            <div className='max-w-5xl m-auto flex items-center justify-between py-7'>
                 <Image
                     src="/images/logo.svg"
                     alt="Formini Logo"

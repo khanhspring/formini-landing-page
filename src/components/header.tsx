@@ -25,12 +25,6 @@ const Header: FC<Props> = ({ }) => {
                         <Link href="/#pricing">
                             Pricing
                         </Link>
-                        <Link href="/docs">
-                            Docs
-                        </Link>
-                        <Link href="/roadmap">
-                            Road map
-                        </Link>
                     </div>
                 </div>
                 <div className='flex items-center gap-6 text-sm font-semibold'>

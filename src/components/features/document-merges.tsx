@@ -34,7 +34,7 @@ const DocumentMerges: FC<Props> = ({ }) => {
 
     return (
         <div className="w-full">
-            <div className="m-auto max-w-5xl w-full py-28 grid grid-cols-2 gap-7">
+            <div className="m-auto max-w-5xl w-full py-24 grid grid-cols-2 gap-7">
                 <div className="flex flex-col justify-center gap-6">
                     <div>
                         <Image

@@ -2,7 +2,7 @@
 export default function RoadMap() {
   return (
     <div>
-        Road Map
+        Coming soon...
     </div>
   )
 }

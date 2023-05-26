@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FC } from "react";
-import twitterLogo from '../../public/images/twitter-logo.svg'
+import twitterLogo from '../../../../public/images/twitter-logo.svg'
 import Link from "next/link";
 type Props = {
 
@@ -17,15 +17,24 @@ const Footer: FC<Props> = ({ }) => {
                     height={24}
                     priority
                 />
-                <span className="text-zinc-500">
+                <div className="flex items-center justify-center gap-7 text-sm">
+                    <Link href="/#pricing" className="hover:underline">
+                        Pricing
+                    </Link>
+                    <Link href="/terms" className="hover:underline">
+                        Terms & conditions
+                    </Link>
+                    <Link href="/terms" className="hover:underline">
+                        Refund policy
+                    </Link>
                     <Link href="https://twitter.com/harrytraneta" target="_blank">
                         <Image
                             src={twitterLogo}
                             alt="Twitter"
-                            width={27}
+                            width={20}
                         />
                     </Link>
-                </span>
+                </div>
             </div>
         </footer>
     )

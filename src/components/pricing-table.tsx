@@ -51,7 +51,7 @@ const PricingTable: FC<Props> = ({ }) => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">500MB files storage</span>
+                                <span className="text-sm">100MB files storage</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
@@ -93,23 +93,23 @@ const PricingTable: FC<Props> = ({ }) => {
                             <div className="mt-6 flex flex-col gap-4">
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
-                                    <span className="text-sm">3 users</span>
+                                    <span className="text-sm">2 users</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
-                                    <span className="text-sm">25 forms</span>
+                                    <span className="text-sm">20 forms</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
-                                    <span className="text-sm">200 document merges/mo</span>
+                                    <span className="text-sm">100 document merges/mo</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
-                                    <span className="text-sm">1,000 submissions/mo</span>
+                                    <span className="text-sm">500 submissions/mo</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
-                                    <span className="text-sm">5GB files storage</span>
+                                    <span className="text-sm">1GB files storage</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
@@ -162,19 +162,19 @@ const PricingTable: FC<Props> = ({ }) => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1,000 forms</span>
+                                <span className="text-sm">200 forms</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">1,000 document merges/mo</span>
+                                <span className="text-sm">500 document merges/mo</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">10,000 submissions/mo</span>
+                                <span className="text-sm">2,000 submissions/mo</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">10GB files storage</span>
+                                <span className="text-sm">5GB files storage</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />

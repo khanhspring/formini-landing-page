@@ -13,7 +13,7 @@ type Props = {
 
 const Features: FC<Props> = ({ }) => {
     return (
-        <section className="w-full mt-24">
+        <section className="w-full mt-12">
             <div className="w-full bg-gradient-to-b from-white to-slate-100">
                 <div className="w-full flex items-center justify-center overflow-hidden">
                     <Image

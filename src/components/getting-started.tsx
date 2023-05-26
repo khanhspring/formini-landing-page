@@ -11,7 +11,7 @@ const GettingStarted: FC<Props> = ({ }) => {
         <section className='px-16 w-full m-auto flex items-center justify-center my-24'>
             <div className="w-full max-w-5xl bg-indigo-50 rounded-3xl p-24 flex items-center justify-between gap-10 relative overflow-hidden">
                 <div className="flex flex-col gap-5 relative z-10">
-                    <h2 className="text-3xl font-bold">
+                    <h2 className="text-2xl font-bold">
                         Get started now and speed up your work
                     </h2>
                     <p className="text-zinc-500">

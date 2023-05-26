@@ -11,13 +11,15 @@ const Header: FC<Props> = ({ }) => {
         <header className='sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-zinc-900/10 bg-white/70 supports-backdrop-blur:bg-white/50'>
             <nav className='max-w-5xl m-auto flex items-center justify-between py-4'>
                 <div className='flex items-center gap-12'>
-                    <Image
-                        src="/images/logo.svg"
-                        alt="Formini Logo"
-                        width={100}
-                        height={24}
-                        priority
-                    />
+                    <Link href="/">
+                        <Image
+                            src="/images/logo.svg"
+                            alt="Formini Logo"
+                            width={100}
+                            height={24}
+                            priority
+                        />
+                    </Link>
                     <div className='flex items-center gap-6 text-sm'>
                         <Link href="/#features">
                             Features

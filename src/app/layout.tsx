@@ -1,6 +1,7 @@
 import PrimaryLayout from '@/components/layouts/primary'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,22 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <PrimaryLayout>{children}</PrimaryLayout>
+
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-L5S53WX1FK" />
+        <Script
+          id='google-analytics'
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-L5S53WX1FK', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+        />
       </body>
     </html>
   )

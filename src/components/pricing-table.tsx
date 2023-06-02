@@ -43,7 +43,7 @@ const PricingTable: FC<Props> = ({ }) => {
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
-                                <span className="text-sm">20 document merges/mo</span>
+                                <span className="text-sm">10 document merges/mo</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
@@ -80,7 +80,7 @@ const PricingTable: FC<Props> = ({ }) => {
                         <div className='w-full flex flex-col relative z-10'>
                             <h3 className="text-xl font-bold">Plus</h3>
                             <div className="mt-4">
-                                <span className="font-bold text-3xl"><span className="text-blue-300">$</span>10</span>
+                                <span className="font-bold text-3xl"><span className="text-blue-300">$</span>15</span>
                                 <span className="text-xs">/month</span>
                             </div>
                             <div className='mt-6'>

@@ -73,6 +73,10 @@ const PricingTable: FC<Props> = ({ }) => {
                                 <CheckIcon className="h-45 w-4" />
                                 <span className="text-sm">Unlimited joining workspaces</span>
                             </div>
+                            <div className="flex items-center gap-2">
+                                <CheckIcon className="h-45 w-4" />
+                                <span className="text-sm">Unlimited page views</span>
+                            </div>
                         </div>
                     </div>
                     <div className="mx-auto w-full max-w-[450px] flex flex-col rounded-3xl border-2 bg-blue-600 p-8 text-white shadow-lg relative">
@@ -130,6 +134,10 @@ const PricingTable: FC<Props> = ({ }) => {
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
                                     <span className="text-sm">Unlimited joining workspaces</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <CheckIcon className="h-45 w-4" />
+                                    <span className="text-sm">Unlimited page views</span>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <CheckIcon className="h-45 w-4" />
@@ -195,6 +203,10 @@ const PricingTable: FC<Props> = ({ }) => {
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />
                                 <span className="text-sm">Unlimited joining workspaces</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <CheckIcon className="h-45 w-4" />
+                                <span className="text-sm">Unlimited page views</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <CheckIcon className="h-45 w-4" />

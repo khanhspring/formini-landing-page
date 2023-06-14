@@ -5,6 +5,7 @@ import DataAnalysis from "./data-analysis";
 import DocumentMerges from "./document-merges";
 import FormBuilder from "./form-builder";
 import RepeatableGroup from "./repeatable-group";
+import PageView from "./page-view";
 
 type Props = {
 
@@ -32,6 +33,7 @@ const Features: FC<Props> = ({ }) => {
                 <DocumentMerges />
                 <RepeatableGroup />
                 <DataAnalysis />
+                <PageView />
             </div>
         </section>
     )
